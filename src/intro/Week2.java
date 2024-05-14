@@ -76,7 +76,22 @@ public class Week2 {
     Task 3
         ask the user for one number
         using the for loop, count from 1 up to this number
-
         user a while loop, count down from this number to 0.
+    Task 4:
+        Pizza Order calculator
+        Ask the user what size of pizza they want?
+            S, M, L, XL
+        Ask the user how many toppings they want on the pizza
+            1-5
+        Ask the user how many km away they live form the pizza store
+            1-20
+        if user inputs any invalid values (size, toppings, km)
+            output error message
+        if not, calculate pizza price
+
+            $5 base price
+            + $3 per topping
+            + $1.5 per km of delivery distance
+        output the price of order
      */
 }
