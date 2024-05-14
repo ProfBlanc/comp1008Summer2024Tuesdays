@@ -65,7 +65,51 @@ public class Week2 {
 
         System.out.println("You are " + age + " years old");
     }
+    static void task1(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your age");
+        int years = input.nextInt();
+        int months = years * 12;
+        int weeks = years * 52;
+        int minutes = years * 365 * 24 * 60;
+        int seconds = minutes * 60;
 
+        System.out.println("Years = " + years);
+        System.out.println("Months = " + months);
+    }
+
+    static void task2(){
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter num1 ");
+        double num1 = input.nextDouble();
+
+        System.out.println("Enter num2 ");
+        double num2 = input.nextDouble();
+
+        double sum = num1 + num2;
+        double prod = num1 * num2;
+        double diff = num1 - num2;
+        double quo = num1 / num2;
+    }
+    static void task3(){
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int i = input.nextInt();
+        System.out.println("Counter from 1 to " + i );
+        int count;
+        for(count = 1; count <= i; count++){
+            System.out.println(count);
+        }
+
+        System.out.println("Counting from " + count + " to 1");
+        while(count > 0){
+            System.out.println(count);
+            count--;
+        }
+
+    }
     /*
     Task 1
         ask the user for their age
