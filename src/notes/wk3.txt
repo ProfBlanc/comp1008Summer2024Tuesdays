@@ -1,0 +1,33 @@
+Task 1
+Create a class named Pizza
+	create a method named
+		delivery: takes 1 String argument representing the address
+			returns: The pizza will be delivered to the address: {address}
+	create another method
+		delivery: takes 1 String argument representing the address
+				1 int argument representing the time the pizza will be
+					delivered
+			returns: The pizza will be delivered to address : {address}					 in {time} minutes
+
+
+Create an array of 2 Pizza class objects
+	Output the result of the FIRST pizza object delivery method
+	using 1 arg, then 2 args
+
+
+Task 2
+Create a class named Course
+	properties
+		courseName: public
+		courseCode: private: restricted to 8-char string
+		grade: number with percision (decimal)
+	method
+		isPassing: evaluate the grade instance variable: return yes or no
+			   if student has grade >= 50
+		isOnDeansList: evaluate and determine if grade >=90
+
+Task 3
+In main method of Week3, create an instance of Course
+Ask the user to input the values for courseName, courseCode and grade
+Output the result of isPassing() & isOnDeansList()
+
