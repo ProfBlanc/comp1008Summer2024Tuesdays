@@ -1,11 +1,41 @@
 package intro;
 
+import java.util.Scanner;
+
 public class Week3 {
 
     //psvm+tab
     public static void main(String[] args) {
 
-        example6();
+        example7();
+    }
+    static void example7(){
+
+        Course c1 = new Course();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a course name: ");
+        String courseName = input.nextLine();
+        String courseCode;
+        do {
+            System.out.printf("Enter the course code for the %s course%n", courseName);
+            courseCode = input.nextLine();
+            if(courseCode.length() == 8)
+                break;
+            System.out.printf("Sorry but '%s' in not a valid course code. " +
+                    "Please try again%n", courseCode);
+        }
+        while(true);
+
+        System.out.println("Enter your grade");
+        double grade = input.nextDouble();
+
+        c1.courseName = courseName;
+        c1.setCourseCode(courseCode);
+        c1.grade = grade;
+
+        System.out.printf("Course name = %s, Course Code = %s, Grade = %.1f",
+                c1.courseName, c1.getCourseCode(), c1.grade);
+
     }
     static void example6(){
 
