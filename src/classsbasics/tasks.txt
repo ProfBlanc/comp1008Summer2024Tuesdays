@@ -1,0 +1,12 @@
+Task 1
+
+Enforce validation for lastName
+    A-Z
+    unlimited hyphen
+    unlimited spaces
+
+Task 2
+    Year of birth needs be at least 2010 or earlier
+
+Task 3
+    Document all newly created methods
