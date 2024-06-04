@@ -10,3 +10,14 @@ Task 2
 
 Task 3
     Document all newly created methods
+
+
+Task 4
+    Create a class named Hobby
+        name, averageTimeSpent => no need for getters and setters
+Task 5
+    Alter Person class
+    Add an ArrayList of Hobbies => private
+    add a method named addHobby(Hobby value) => add Hobby to the ArrayList of Hobbies
+    add a method name removeHobby(index) => remove the hobby from the ArrayList of Hobbies
+    add a method named displayHobbies: output to Console all hobbies: name and averageTimeSpent

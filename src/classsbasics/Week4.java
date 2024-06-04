@@ -14,6 +14,17 @@ public class Week4 {
         System.out.println(p1.getFirstName());
 
         p1.height = 1.3;
+        System.out.println(p1.educationLevel);
+        p1.educationLevel = Person.ListOfEducation.UNIVERSITY;
+        System.out.println(p1.educationLevel);
+
+        Person youngPerson = Person.Youth();
+        System.out.println(youngPerson.getBirthYear());
+
+
+        Person p2 = new Person("Ben", "Blanc", (short)2000);
+        System.out.println(p2.getFirstName());
+        System.out.println(p2.getBirthYear());
 
     }
 }
