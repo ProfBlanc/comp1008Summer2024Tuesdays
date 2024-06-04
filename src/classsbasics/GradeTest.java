@@ -1,6 +1,9 @@
 package classsbasics;
 
 import org.junit.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -27,7 +30,7 @@ public class GradeTest {
     public void test2(){
 
         String name = "Intro to OOP";
-        double mark  = 101;
+        double mark  = 10;
 
         Grade grade = new Grade(name, mark);
 
@@ -38,5 +41,48 @@ public class GradeTest {
 
     }
 
+    @Test
+    public void testThreeArgConstructorWithInvalidValues(){
+
+        String name = "abc";
+        double mark = -10;
+        Grade grade = new Grade(name, mark);
+
+        assertNotEquals(name, grade.getName());
+        assertEquals(0, grade.getMark());
+
+        assertTrue(grade.getName().equals("Grade") &&
+                grade.getMark() == 0);
+
+    }
+    //strings, doubles, ints (datatype)s
+
+    @ParameterizedTest
+    @ValueSource(doubles = {20, 30, 40, 100})
+    public void testingGradesSetterWithValidValues(double mark) {
+
+        Grade grade = new Grade();
+        grade.setMark(mark);
+        assertEquals(mark, grade.getMark());
+
+    }
+    @ParameterizedTest
+    @ValueSource(doubles = {220, -30, 400, -100})
+    public void testingGradesSetterWithInValidValues(double mark) {
+
+        Grade grade = new Grade();
+        grade.setMark(mark);
+        assertNotEquals(mark, grade.getMark());
+
+    }
+
+    @ParameterizedTest
+    @CsvSource({"OOP Course,100","Database,90","ASP .NET,95"})
+    public void testingGradesConstructorWith3ArgsValidValues(String name, double mark){
+
+        Grade grade = new Grade(name, mark);
+        assertEquals(name, grade.getName());
+        assertEquals(mark, grade.getMark());
+    }
 
 }
