@@ -1,5 +1,6 @@
 package classsbasics;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -16,6 +17,8 @@ public class Person {
     private short birthYear = 2010;
     /** This is the height of the person */
     public double height;
+
+    private ArrayList<Hobby> hobbies = new ArrayList<>();
 
     //level of education
     //enum: enumerable: drop-down list of options
@@ -155,5 +158,39 @@ public class Person {
     }
     public Person(short birthYear, String lastName, String firstName){
         this(firstName, lastName, birthYear);
+    }
+
+    public void addHobby(Hobby hobby){
+        hobbies.add(hobby);
+    }
+    public void addHobby(String name, double averageTimeSpent){
+        addHobby(new Hobby(name, averageTimeSpent));
+    }
+    public boolean removeHobby(Hobby hobby){
+
+        if(hobbies.contains(hobby)){
+            hobbies.remove(hobby);
+            return true;
+        }
+        return false;
+    }
+    public boolean removeHobby(int index){
+
+        if(index < 0 || index >= hobbies.size())
+            return false;
+
+        hobbies.remove(index);
+        return true;
+    }
+
+    public void displayHobbies(){
+
+
+        for(Hobby currentHobby : hobbies){
+            System.out.printf("Name=%s, AvgTimeSpent=%.1f%n",
+                    currentHobby.name, currentHobby.averageTimeSpent);
+        }
+
+
     }
 }

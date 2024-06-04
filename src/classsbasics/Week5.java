@@ -69,9 +69,31 @@ people.contains(new Person());
 
 
     }
+
+    static void example3(){
+
+        Person p1 = new Person("John", "Smith", (short)2000);
+        p1.addHobby("Coding", 365);
+        p1.addHobby(new Hobby("Coding", 365));
+        p1.addHobby("Walking", 30.5);
+        p1.displayHobbies();
+        System.out.println("*".repeat(20));
+
+        Hobby h = new Hobby("Walking", 30);
+        System.out.println(h.equals(1));
+        System.out.println(h.equals("hello"));
+
+        System.out.println(new Hobby("walking", 30).equals(
+                new Hobby("walking", 30)
+        ));
+
+        p1.removeHobby(new Hobby("Coding", 365));
+        p1.displayHobbies();
+
+    }
     public static void main(String[] args) {
 
-        example1();
+        example3();
 
     }
 }

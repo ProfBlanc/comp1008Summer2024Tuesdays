@@ -21,3 +21,15 @@ Task 5
     add a method named addHobby(Hobby value) => add Hobby to the ArrayList of Hobbies
     add a method name removeHobby(index) => remove the hobby from the ArrayList of Hobbies
     add a method named displayHobbies: output to Console all hobbies: name and averageTimeSpent
+
+
+Task 6
+    Create an Test that tests the setter.
+    Create a Grade object with valid values
+    Change the mark to a value of 500
+    assert that the mark of 500 is NOT equal to the grade getMark method
+
+Task 7
+    Create a Test that tests the 2-arg constructor
+    Pass two invalid args (name too short, mark too low or high)
+    Assert that the grade object's getMark and getName equal their default values
