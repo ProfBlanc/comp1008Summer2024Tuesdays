@@ -1,0 +1,132 @@
+String data is wasteful
+String data is technically a Reference data type
+    but behaves like a primitive data type
+
+String s = new String(); => possible
+
+String s = "hello world";
+
+int num = 100;
+
+We could use it as a pure Reference data type
+    most developers do not
+
+
+Anytime that we update a string (change the content)
+    Destroying the previously decelared String variable
+    Creating a new string variable, putting new contents as value
+
+
+String s = "hello world";
+s = "hi, there";
+
+//Creating String variable named s => "Hello World"
+//destroying String variable named s, creating a new Object
+// called String s=> "hi, there"
+
+
+StringBuilder class
+A true Reference data type
+    Instantiated and used like an object
+Is mutable
+Like a waterbottle
+    a capacity
+        soft capacity
+            auto-increases
+                previous capacity + 1, doubled
+
+
+REGularEXpressions
+advanced searching for text
+
+a word that contains two e's following by an n
+
+text that contains two e's following by
+either n, m, l
+
+
+Special Characters => special means
+
+Position
+
+^   at start
+$   at end
+
+^ben    text starts with ben
+
+you$    text ends with you
+
+Ranges
+[a-z]   contains letters a-z inclusive
+[aeiou] contains either a, e, i, o, u
+()      group, execute this first, literal text
+
+[^a-z]  does NOT contain letters a-z
+[^aeiou] does NOT contain neither a, e, i, o, u
+
+[0-9]   contains numbers 0-9
+
+Repetition
+
+{N}     Repeat N times
+e{2}[nlm]
+    e repeated exactly twice, following by n, l or m (once
+        been, feel, etc
+{N,}    Repeated at least N times
+    e{2,}[nlm]
+        beeeeeeeeeeeeeeeeeeen,
+        feeeeeel,
+        deeeeeeeeeem
+{N,M} between N and M times
+    e{2,5}[nlm]
+        will match
+            been, beeeeen, beeeen,
+        Not match
+            beeeeeen
+
+Short-cut Repetition
+
+?       zero or 1 times
+    {0,1}
++       one or many times
+    {1,}
+*       zero or many times
+    {0,}
+
+.   Matches any letter
+^b.+n$
+    text starts with b, has at least 1 character afterwards. Ends in n
+
+Short-cut Regex Expressions
+
+\d      any digit
+    [0-9]
+\w      any word
+    [a-zA-Z_]
+\s      whitespace
+    [\t\n\r ]
+
+\D   not any digit
+    [^0-9]
+\W   not a word
+    [^a-zA-Z_]
+\S  not whitespace
+
+
+
+
+Exceptions
+    The program did not end properly
+
+    Exception COULD happend using
+        accepting user input
+        opening internal resources
+            files, folders, image,etc
+        connecting to external resources
+            database
+            api
+    Exceptions are not the same as syntax errors
+
+    Try-Catch blocks
+        attempting to run a code that falls under above categories
+        EXCEPT an error => NO technical difficulties
