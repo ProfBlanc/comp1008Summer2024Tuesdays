@@ -1,0 +1,43 @@
+File Manipulation
+    read & write data to the File System (FS)
+        data is persistent
+            database server (online computer)
+                way to organize data in a structure (tables)
+            file-based
+                files and folders
+
+package
+    java.io.* (many objects)
+    java.nio.*(many objects)
+
+What objects?
+    File: class that creates an object
+            either file or folder
+    Path: class that creates a path location to
+            either a file or folder
+
+Path = address = 1 Georgian Drive
+File = building = K building
+
+You need to create a Path before manipulating/selecting a File
+Convert a path to a file
+
+
+    Files
+            a class that provides fast, quick
+            CRUD operations for a specific Path.
+            Includes static methods to execute
+            these CRUD
+
+            Create
+            Read
+            Update aka Edit
+            Delete
+    Paths
+        a class that also provides static methods to fast operations
+        -not doing to use
+
+When creating anything
+    file, folder
+must ATTEMPT to create
+catch any exception
