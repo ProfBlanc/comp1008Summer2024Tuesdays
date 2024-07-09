@@ -1,0 +1,58 @@
+inheritance
+    creating a class BASED on a previously existing class
+
+previous                        newly created
+
+Parent Class                         Child Class
+Base Class                           Derived Class
+Super Class                          Sub Class
+
+
+EVERY class we have created inheritance Object class
+
+
+The Subclass inherits (has access to) all
+non-private
+    instance variables
+    methods
+
+FAQ for Subclasses
+    Can you remove an instance variable of Parent class?
+        No
+    Can you remove a method of Parent class?
+        No
+    Can you edit the name of an instance variable?
+        No
+    Can you change the method body of a Parent class method?
+        Yes
+
+
+
+Double Oh's
+
+Overloading
+    adding a new variation to the method
+    same method name, unique combo of number of args, data types of args
+
+Overriding
+    Replacing the behaviour / value of something
+    Done at method-value => changing the method body of a class
+
+
+More Details about Sub-Class
+
+Indirect Inheritance
+    if something is private but has a public access,
+    then it is accessible.
+
+Only the default constructor is inherited
+
+Java support single-class hierachy
+
+Class 1 => Class 2 => Class 3 => Class 4
+
+
+
+Polymorphism
+    Poly = many
+    morphism = forms/bodies
