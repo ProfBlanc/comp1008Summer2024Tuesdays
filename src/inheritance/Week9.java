@@ -1,12 +1,10 @@
 package inheritance;
 
 public class Week9 {
+    static void example1(){
+        Week9 wk9 = new Week9();
 
-    public static void main(String[] args) {
-
-       Week9 wk9 = new Week9();
-
-       Person p = new Person();
+        Person p = new Person();
         System.out.println(p);
 
         //p.firstName = "Ben";
@@ -21,6 +19,16 @@ public class Week9 {
 
         System.out.println(p.consume("rice"));
         System.out.println(student.consume("rice"));
+
+    }
+    static void example2(){
+
+        Person old = new Student();
+        System.out.println(old.consume("rice"));
+        System.out.println(old);
+    }
+    public static void main(String[] args) {
+        example2();
 
     }
 }
