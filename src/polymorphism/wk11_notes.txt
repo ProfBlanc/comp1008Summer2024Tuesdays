@@ -1,0 +1,56 @@
+WeeklyContent	A
+PowerPoint	I
+Slide		I
+Lecture		I
+Instructor	C
+
+Slide ext PowerPoint
+WeeklyContent imp Lecture
+Instructor imp Lecture
+
+Instructor:C ext Lecture:A ext WeeklyContent:A imp PowerPoint:I ext Slide:I
+
+Lecture:C/A ext Instructor:C imp
+Slide:I ext WeeklyContent:I ext PowerPoint:I
+
+
+Instructor ext Lecture imp PowerPoint ext WeeklyContent imp Slide
+
+
+
+Organize these concepts into one of the following: concret, abstract, interface
+
+
+
+
+
+PostSecondarySchool
+Education
+GeorgianCollege: C
+Campus
+BarrieCampus
+OrillaCampus
+Diploma
+Course
+Program
+Grade
+
+
+
+
+BarrieCampus or OriellaCampus:C ext GeorgianCollege:C
+imp Campus:I AND ext
+PSS:A ext Edu:A imp Diploma:I ext Program:I ext Course:I imp Grade:I
+
+
+
+
+
+
+
+
+
+
+
+
+
